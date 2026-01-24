@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "JiYeop Kim"
+  name             : "kang su won"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Diffusion은 신이고 GPT는 무적이다"
+  bio              : "룰루랄라"
   location         : "Seoul, Korea"
   email            : "99edward@snu.ac.kr"
   links:
@@ -124,7 +124,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/kimjy99"
+      url: "https://github.com/su_wone"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
