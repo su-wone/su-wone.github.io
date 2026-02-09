@@ -19,6 +19,7 @@ classes: wide
 IVO JUNIOR LEAL ZANGHETTIN 2, AND JONGHEE HAN   
 > 6 May 2024. 
 
+
 ## ABSTRACT
 
 ---
@@ -96,7 +97,7 @@ IVO JUNIOR LEAL ZANGHETTIN 2, AND JONGHEE HAN
     - 심장 질환 또는 관상동맥 질환 진단을 받은 사람은 제외
 - 논문 Table 2에는 각 기관별 인구통계 및 수면 단계 분포가 정리되어 있음.
 
-![스크린샷 2026-02-09 오후 3.11.08.png](%5B%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0%5DUltra-Wideband%20Radar-Based%20Sleep%20Stage%20Class/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-02-09_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.11.08.png)
+<center><img src='{{"/assets/img/[논문리뷰]Ultra-Wideband Radar-Based Sleep Stage Class/스크린샷_2026-02-09_오후_3.11.08.png" | relative_url}}' width="100%"></center>
 
 ### B.PROTOCOL
 
@@ -117,8 +118,7 @@ IVO JUNIOR LEAL ZANGHETTIN 2, AND JONGHEE HAN
     - 이 경우 스마트폰은 삼각대에 장착되고, **폰의 뒷면(back side)이 피험자를 향하도록** 배치.
 - 두 경우 모두, 스마트폰(레이더)와 피험자 간 거리는 **약 1 m**로 유지.
     
-    ![스크린샷 2026-02-09 오후 3.14.46.png](%5B%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0%5DUltra-Wideband%20Radar-Based%20Sleep%20Stage%20Class/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-02-09_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.14.46.png)
-    
+    <center><img src='{{"/assets/img/[논문리뷰]Ultra-Wideband Radar-Based Sleep Stage Class/스크린샷_2026-02-09_오후_3.14.46.png" | relative_url}}' width="100%"></center>
 
 학습·평가에 사용한 데이터 구분
 
@@ -255,7 +255,7 @@ IVO JUNIOR LEAL ZANGHETTIN 2, AND JONGHEE HAN
     - 이렇게 설정하면 **30초(1 epoch)당 16개의 time step**이 나오도록 맞출 수 있다.
 - 각 12초 구간에 대해 Fourier transform을 적용해 스펙트럼을 만들고, 이것을 시간축으로 쌓아서 **호흡 스펙트로그램**을 구성.
 
-![스크린샷 2026-02-09 오후 4.02.50.png](%5B%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0%5DUltra-Wideband%20Radar-Based%20Sleep%20Stage%20Class/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-02-09_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.02.50.png)
+<center><img src='{{"/assets/img/[논문리뷰]Ultra-Wideband Radar-Based Sleep Stage Class/스크린샷_2026-02-09_오후_4.02.50.png" | relative_url}}' width="100%"></center>
 
 - 이 스펙트로그램이 Fig. 2에서 예시로 보여주는 (a) 호흡 파형·(b) 스펙트로그램 그림과 대응된다.
 
@@ -288,7 +288,7 @@ IVO JUNIOR LEAL ZANGHETTIN 2, AND JONGHEE HAN
 
 이를 위해, 먼저 **1D convolutional neural network(CNN)**에 residual connection을 적용한 구조를 사용하여, **하룻밤 Doppler map에서 N개의 연속된 에포크 구간을 잘라 입력으로 받는 세그먼트**로부터 특징을 추출하였다. 이후, 각 에포크에 해당하는 feature 시퀀스를 **Transformer encoder**에 입력하여, 수면 단계 전이의 장·단기 패턴을 모델링하였다. 전체 모델 구조는 Fig. 3에 요약되어 있다.
 
-![스크린샷 2026-02-09 오후 4.08.02.png](%5B%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0%5DUltra-Wideband%20Radar-Based%20Sleep%20Stage%20Class/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-02-09_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.08.02.png)
+<center><img src='{{"/assets/img/[논문리뷰]Ultra-Wideband Radar-Based Sleep Stage Class/스크린샷_2026-02-09_오후_4.08.02.png" | relative_url}}' width="100%"></center>
 
 ---
 
@@ -408,7 +408,7 @@ $$
 
 결과적으로, 도메인과 상관없이 **“같은 수면 단계 = 비슷한 latent feature, 다른 수면 단계 = 일정 거리 이상 분리”**되도록 embedding space를 정렬한다.
 
-![스크린샷 2026-02-09 오후 4.22.02.png](%5B%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0%5DUltra-Wideband%20Radar-Based%20Sleep%20Stage%20Class/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-02-09_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.22.02.png)
+<center><img src='{{"/assets/img/[논문리뷰]Ultra-Wideband Radar-Based Sleep Stage Class/스크린샷_2026-02-09_오후_4.22.02.png" | relative_url}}' width="100%"></center>
 
 ---
 
@@ -457,7 +457,7 @@ $$
 - 서로 겹치는 세그먼트에서 나온 에포크별 확률도 **겹치는 부분끼리 평균**해 최종 에포크별 sleep stage 확률을 얻는다.
 - 3-class(W/REM/NREM) + 2-class(Light/Deep) 결과를 조합해 4-stage 라벨을 결정.
 
-![스크린샷 2026-02-09 오후 4.22.40.png](%5B%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0%5DUltra-Wideband%20Radar-Based%20Sleep%20Stage%20Class/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-02-09_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.22.40.png)
+<center><img src='{{"/assets/img/[논문리뷰]Ultra-Wideband Radar-Based Sleep Stage Class/스크린샷_2026-02-09_오후_4.22.40.png" | relative_url}}' width="100%"></center>
 
 ## G. VALIDATION
 
@@ -556,7 +556,7 @@ Table 3에는, 509명의 모든 참가자에 대해 **에포크 단위로 PSG �
 
 Fig. 7은 전체 참가자를 대상으로 한 **4-stage 혼동행렬(confusion matrix)**을 보여준다. 각 행은 PSG 기준 참 라벨, 각 열은 모델 예측 라벨이며, **행 기준 정규화(sensitivity)**로 나타냈다.
 
-![스크린샷 2026-02-09 오후 4.54.32.png](%5B%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0%5DUltra-Wideband%20Radar-Based%20Sleep%20Stage%20Class/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-02-09_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.54.32.png)
+<center><img src='{{"/assets/img/[논문리뷰]Ultra-Wideband Radar-Based Sleep Stage Class/스크린샷_2026-02-09_오후_4.54.32.png" | relative_url}}' width="100%"></center>
 
 주요 관찰 사항은 다음과 같다.
 
@@ -573,7 +573,7 @@ Fig. 7은 전체 참가자를 대상으로 한 **4-stage 혼동행렬(confusion 
 
 Fig. 8은 한 참가자에 대한 **대표 hypnogram**으로, 전문가 PSG 라벨과 모델 예측 라벨을 시간 축에 따라 나란히 표시한 예시다. 이 참가자의 성능은 kappa 0.667, Accuracy 0.784 정도로, 전체 참가자 중 “평균에 가까운” 케이스이다.
 
-![스크린샷 2026-02-09 오후 4.55.00.png](%5B%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0%5DUltra-Wideband%20Radar-Based%20Sleep%20Stage%20Class/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-02-09_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.55.00.png)
+<center><img src='{{"/assets/img/[논문리뷰]Ultra-Wideband Radar-Based Sleep Stage Class/스크린샷_2026-02-09_오후_4.55.00.png" | relative_url}}' width="100%"></center>
 
 그림을 보면,
 
@@ -612,7 +612,7 @@ SMC 외부 검증에서 4-stage 분류 성능은 다음과 같다(Table 3 마지
     - Open DB 스펙트로그램 + UWB Doppler를 동시에 입력
     - Lcls+Lcon*Lcls*+*Lcon*으로 도메인 정렬하면서 학습.
 
-![스크린샷 2026-02-09 오후 4.56.20.png](%5B%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0%5DUltra-Wideband%20Radar-Based%20Sleep%20Stage%20Class/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-02-09_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.56.20.png)
+<center><img src='{{"/assets/img/[논문리뷰]Ultra-Wideband Radar-Based Sleep Stage Class/스크린샷_2026-02-09_오후_4.56.20.png" | relative_url}}' width="100%"></center>
 
 주요 결과는 다음과 같다.
 
@@ -647,7 +647,7 @@ SMC 외부 검증에서 4-stage 분류 성능은 다음과 같다(Table 3 마지
 > **[Epoch-length별 세 모델의 Cohen’s kappa]**
 > 
 > 
-> ![스크린샷 2026-02-09 오후 4.56.48.png](%5B%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0%5DUltra-Wideband%20Radar-Based%20Sleep%20Stage%20Class/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-02-09_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.56.48.png)
+> <center><img src='{{"/assets/img/[논문리뷰]Ultra-Wideband Radar-Based Sleep Stage Class/스크린샷_2026-02-09_오후_4.56.48.png" | relative_url}}' width="100%"></center>
 > 
 
 핵심 결과는 다음과 같다.
