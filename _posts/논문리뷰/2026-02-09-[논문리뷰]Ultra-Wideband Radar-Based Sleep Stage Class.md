@@ -526,7 +526,7 @@ $$
 
 Table 3에는, 509명의 모든 참가자에 대해 **에포크 단위로 PSG 라벨과 모델 예측을 비교한 결과**가 정리되어 있다. 입력 세그먼트 길이는 240 에포크(약 120분)일 때의 성능이다.
 
-![스크린샷 2026-02-09 오후 4.53.56.png](%5B%EB%85%BC%EB%AC%B8%EB%A6%AC%EB%B7%B0%5DUltra-Wideband%20Radar-Based%20Sleep%20Stage%20Class/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-02-09_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.53.56.png)
+<center><img src='{{"/assets/img/[논문리뷰]Ultra-Wideband Radar-Based Sleep Stage Class/스크린샷_2026-02-09_오후_4.53.56.png" | relative_url}}' width="100%"></center>
 
 핵심 숫자는 다음과 같다.
 
